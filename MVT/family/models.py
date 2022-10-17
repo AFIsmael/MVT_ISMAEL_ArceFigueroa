@@ -7,4 +7,4 @@ class Family(models.Model):
     age = models.DateField()
 
     def __str__(self):
-        return f"{self.name} {self.last_name} - DNI: {self.dni} - Fecha nacimiento:{self.age}"
+        return f"{self.name} {self.last_name} - DNI: {self.dni} - Fecha nacimiento: {self.age}"
