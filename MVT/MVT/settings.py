@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MVT.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['E:/Python_Coder/MVT_IsmaelArceFigueroa/MVT/templates'],
+        'DIRS': ['E:/Python_Coder/MVT_ISMAEL_ArceFigueroa/MVT/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
