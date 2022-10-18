@@ -22,6 +22,7 @@ from family.views import create_family
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("create_family/<str:name>/<str:last_name>/<int:dni>/<str:age>", create_family),
+    path("", include("home.urls")),
+    path("create_family/<str:name>/<str:last_name>/<int:dni>/<str:date_birth>", create_family),
     path("family/", include("family.urls")),
 ]

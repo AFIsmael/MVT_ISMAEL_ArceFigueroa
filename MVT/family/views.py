@@ -5,13 +5,13 @@ from django.template import loader
 
 from family.models import Family
 
-def create_family(request, name: str, last_name: str, dni: int, age: str):
+def create_family(request, name: str, last_name: str, dni: int, date_birth: str):
 
     template = loader.get_template("template_family.html")
-    age = datetime.strptime(age, "%Y-%m-%d")
+    date_birth = datetime.strptime(date_birth, "%Y-%m-%d")
 
     family = Family(
-        name=name, last_name=last_name, dni=dni, age=age
+        name=name, last_name=last_name, dni=dni, date_birth=date_birth
     )
     family.save()  # save into the DB
 
